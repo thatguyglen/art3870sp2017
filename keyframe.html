@@ -1,0 +1,33 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate/Transform Animation</title>
+    <link rel="stylesheet" href="css/app.css">
+    <style media="screen">
+    #zoetrope{
+      border: 1px solid red;
+      height: 497px; width: 750px;
+      background: url("img/muybridge.png");
+      animation:muybridge 2s steps(6) infinite;
+      animation-play-state: paused;
+    }
+    @keyframes muybridge {
+      100%{ background-position: 7320px;}
+
+    }
+    #zoetrope:hover{animation-play-state: running}
+    </style>
+  </head>
+  <body>
+    <div id="zoetrope">
+    </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
